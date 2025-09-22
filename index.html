@@ -1,187 +1,168 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículum de Luciano Budman</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- AOS Animate On Scroll -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    /* Gradiente animado */
-    @keyframes gradient-x {
-      0% {background-position:0% 50%;}
-      50% {background-position:100% 50%;}
-      100% {background-position:0% 50%;}
-    }
-    .animate-gradient-x {
-      background-size: 200% 200%;
-      animation: gradient-x 6s ease infinite;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum de Luciano Budman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Gradiente animado */
+        @keyframes gradient-x {
+            0% {background-position:0% 50%;}
+            50% {background-position:100% 50%;}
+            100% {background-position:0% 50%;}
+        }
+        .animate-gradient-x {
+            background-size: 200% 200%;
+            animation: gradient-x 6s ease infinite;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100 p-4 sm:p-8 md:p-12 lg:p-16">
 
-  <!-- Contenedor Principal -->
-  <div class="max-w-5xl mx-auto bg-white dark:bg-gray-800 shadow-2xl rounded-3xl overflow-hidden transform transition-all duration-500">
-    
-    <!-- Header -->
-    <header class="relative bg-gradient-to-r from-teal-500 via-sky-500 to-indigo-500 animate-gradient-x text-white p-10 text-center rounded-t-3xl">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-2">Luciano Budman</h1>
-      <h2 class="text-lg sm:text-xl lg:text-2xl font-light text-gray-100">Profesional en Tecnología y Desarrollo</h2>
-      <a href="cv.pdf" download class="inline-block bg-white text-indigo-600 px-6 py-2 rounded-full mt-6 hover:bg-gray-100 transition">
-        Descargar CV PDF
-      </a>
-    </header>
+    <div class="max-w-5xl mx-auto bg-white dark:bg-gray-800 shadow-2xl rounded-3xl overflow-hidden transform transition-all duration-500">
+        
+        <header class="relative bg-gradient-to-r from-teal-500 via-sky-500 to-indigo-500 animate-gradient-x text-white p-10 text-center rounded-t-3xl">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-2">Luciano Budman</h1>
+            <h2 class="text-lg sm:text-xl lg:text-2xl font-light text-gray-100">Profesional en Tecnología y Desarrollo</h2>
+            <a href="cv.pdf" download class="inline-block bg-white text-indigo-600 px-6 py-2 rounded-full mt-6 hover:bg-gray-100 transition">
+                Descargar CV PDF
+            </a>
+        </header>
 
-    <!-- Perfil -->
-    <section class="p-6 md:p-8 lg:p-10 flex flex-col md:flex-row items-center md:items-start gap-8" data-aos="fade-up">
-  
-      <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto md:mx-0">
-    <img src="Foto/FotoPrefil.png" alt="Foto de perfil" class="w-full h-full object-cover object-center">
-  </div>
+        <section class="p-6 md:p-8 lg:p-10 flex flex-col md:flex-row items-center md:items-start gap-8" data-aos="fade-up">
+            <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto md:mx-0">
+                <img src="Foto/FotoPrfeil.png" alt="Foto de perfil" class="w-full h-full object-cover object-center">
+            </div>
 
-      <!-- Texto -->
-      <div class="flex-grow text-center md:text-left">
-        <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
-          Estudiante técnico proactivo y orientado a la resolución de problemas, con una sólida base en computación. Apasionado por la tecnología y el aprendizaje continuo, con habilidades en programación y gestión de proyectos. Adaptable y con gran iniciativa para enfrentar desafíos y contribuir en equipos de trabajo.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 text-gray-500 dark:text-gray-400 mt-4">
-          <div class="flex items-center gap-2">
-            <i class="fas fa-map-marker-alt text-teal-500"></i>
-            <span class="text-sm">Villa Urquiza, CABA</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fas fa-envelope text-sky-500"></i>
-            <span class="text-sm">lucianobudman2005@gmail.com</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fas fa-phone-alt text-indigo-500"></i>
-            <span class="text-sm">+54 9 11 6954 0365</span>
-          </div>
+            <div class="flex-grow text-center md:text-left">
+                <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
+                    Estudiante técnico proactivo y orientado a la resolución de problemas, con una sólida base en computación. Apasionado por la tecnología y el aprendizaje continuo, con habilidades en programación y gestión de proyectos. Adaptable y con gran iniciativa para enfrentar desafíos y contribuir en equipos de trabajo.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 text-gray-500 dark:text-gray-400 mt-4">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-teal-500"></i>
+                        <span class="text-sm">Villa Urquiza, CABA</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-envelope text-sky-500"></i>
+                        <span class="text-sm">lucianobudman2005@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-phone-alt text-indigo-500"></i>
+                        <span class="text-sm">+54 9 11 6954 0365</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="p-6 md:p-8 lg:p-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition-transform hover:scale-105" data-aos="fade-up">
+                <h3 class="text-2xl font-semibold mb-4 border-b-2 border-teal-500 pb-2 text-gray-800 dark:text-gray-100">Educación</h3>
+                <div class="mb-4">
+                    <h4 class="font-bold text-gray-700 dark:text-gray-200">Bachillerato Técnico en Computación</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-300">Escuela Técnica 32 Gral. José de San Martín</p>
+                    <p class="text-xs text-gray-400 mt-1">Marzo 2017 - Diciembre 2023</p>
+                    <ul class="list-disc list-inside mt-2 text-sm text-gray-600 dark:text-gray-300">
+                        <li>Resolución de problemas y pensamiento lógico.</li>
+                        <li>Base sólida en programación y sistemas informáticos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition-transform hover:scale-105" data-aos="fade-up">
+                <h3 class="text-2xl font-semibold mb-4 border-b-2 border-sky-500 pb-2 text-gray-800 dark:text-gray-100">Habilidades Clave</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-300">
+                    <div>
+                        <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Software y Herramientas</h4>
+                        <ul class="list-disc list-inside ml-2">
+                            <li>Microsoft Office</li>
+                            <li>Google Sheets</li>
+                            <li>Visual Studio</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Habilidades Técnicas</h4>
+                        <ul class="list-disc list-inside ml-2">
+                            <li>Java, Python, C++</li>
+                            <li>HTML, JavaScript</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Interpersonales</h4>
+                        <ul class="list-disc list-inside ml-2">
+                            <li>Trabajo en equipo</li>
+                            <li>Resolución de Problemas</li>
+                            <li>Iniciativa</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Idiomas</h4>
+                        <ul class="list-disc list-inside ml-2">
+                            <li>Español (Nativo)</li>
+                            <li>Inglés (Básico)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 md:col-span-2 bg-gray-50 dark:bg-gray-700 p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition-transform hover:scale-105" data-aos="fade-up">
+                <h3 class="text-2xl font-semibold mb-4 border-b-2 border-indigo-500 pb-2 text-gray-800 dark:text-gray-100">Cursos y Certificaciones</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+                    <div>
+                        <h4 class="font-bold text-gray-700 dark:text-gray-200">Desarrollo de Videojuegos con Unity</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-300">Gobierno de la Ciudad de Bs. As.</p>
+                        <p class="text-xs text-gray-400 mt-1">Enero 2023</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-700 dark:text-gray-200">Robótica</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-300">Universidad Tecnológica Nacional (UTN)</p>
+                        <p class="text-xs text-gray-400 mt-1">Diciembre 2022</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </section>
 
-    <!-- Educación y Habilidades -->
-    <div class="p-6 md:p-8 lg:p-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section class="p-6 md:p-8 lg:p-10" data-aos="fade-up">
+            <h3 class="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">Proyectos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white dark:bg-gray-600 rounded-xl shadow-md p-6 hover:shadow-2xl hover:scale-105 transition">
+                    <h4 class="font-bold text-xl mb-2 text-gray-700 dark:text-gray-200">Proyecto Web</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-300 mb-4">Breve descripción del proyecto.</p>
+                    <a href="#" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition">Ver proyecto</a>
+                </div>
+                <div class="bg-white dark:bg-gray-600 rounded-xl shadow-md p-6 hover:shadow-2xl hover:scale-105 transition">
+                    <h4 class="font-bold text-xl mb-2 text-gray-700 dark:text-gray-200">App / Script</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-300 mb-4">Breve descripción del proyecto.</p>
+                    <a href="#" target="_blank" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition">Ver proyecto</a>
+                </div>
+            </div>
+        </section>
 
-      <!-- Educación -->
-      <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition-transform hover:scale-105" data-aos="fade-up">
-        <h3 class="text-2xl font-semibold mb-4 border-b-2 border-teal-500 pb-2 text-gray-800 dark:text-gray-100">Educación</h3>
-        <div class="mb-4">
-          <h4 class="font-bold text-gray-700 dark:text-gray-200">Bachillerato Técnico en Computación</h4>
-          <p class="text-sm text-gray-500 dark:text-gray-300">Escuela Técnica 32 Gral. José de San Martín</p>
-          <p class="text-xs text-gray-400 mt-1">Marzo 2017 - Diciembre 2023</p>
-          <ul class="list-disc list-inside mt-2 text-sm text-gray-600 dark:text-gray-300">
-            <li>Resolución de problemas y pensamiento lógico.</li>
-            <li>Base sólida en programación y sistemas informáticos.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Habilidades -->
-      <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition-transform hover:scale-105" data-aos="fade-up">
-        <h3 class="text-2xl font-semibold mb-4 border-b-2 border-sky-500 pb-2 text-gray-800 dark:text-gray-100">Habilidades Clave</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-300">
-          <div>
-            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Software y Herramientas</h4>
-            <ul class="list-disc list-inside ml-2">
-              <li>Microsoft Office</li>
-              <li>Google Sheets</li>
-              <li>Visual Studio</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Habilidades Técnicas</h4>
-            <ul class="list-disc list-inside ml-2">
-              <li>Java, Python, C++</li>
-              <li>HTML, JavaScript</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Interpersonales</h4>
-            <ul class="list-disc list-inside ml-2">
-              <li>Trabajo en equipo</li>
-              <li>Resolución de Problemas</li>
-              <li>Iniciativa</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Idiomas</h4>
-            <ul class="list-disc list-inside ml-2">
-              <li>Español (Nativo)</li>
-              <li>Inglés (Básico)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cursos -->
-      <div class="col-span-1 md:col-span-2 bg-gray-50 dark:bg-gray-700 p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition-transform hover:scale-105" data-aos="fade-up">
-        <h3 class="text-2xl font-semibold mb-4 border-b-2 border-indigo-500 pb-2 text-gray-800 dark:text-gray-100">Cursos y Certificaciones</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
-          <div>
-            <h4 class="font-bold text-gray-700 dark:text-gray-200">Desarrollo de Videojuegos con Unity</h4>
-            <p class="text-sm text-gray-500 dark:text-gray-300">Gobierno de la Ciudad de Bs. As.</p>
-            <p class="text-xs text-gray-400 mt-1">Enero 2023</p>
-          </div>
-          <div>
-            <h4 class="font-bold text-gray-700 dark:text-gray-200">Robótica</h4>
-            <p class="text-sm text-gray-500 dark:text-gray-300">Universidad Tecnológica Nacional (UTN)</p>
-            <p class="text-xs text-gray-400 mt-1">Diciembre 2022</p>
-          </div>
-        </div>
-      </div>
+        <footer class="p-6 bg-gray-800 text-center text-gray-400 rounded-b-3xl">
+            <p class="mb-2">© 2025 Luciano Budman</p>
+            <div class="flex justify-center space-x-4 text-xl">
+                <a href="https://github.com/tuusuario" class="hover:text-white"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/tuusuario" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
 
     </div>
 
-    <!-- Proyectos -->
-    <section class="p-6 md:p-8 lg:p-10" data-aos="fade-up">
-      <h3 class="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">Proyectos</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white dark:bg-gray-600 rounded-xl shadow-md p-6 hover:shadow-2xl hover:scale-105 transition">
-          <h4 class="font-bold text-xl mb-2 text-gray-700 dark:text-gray-200">Proyecto Web</h4>
-          <p class="text-sm text-gray-500 dark:text-gray-300 mb-4">Breve descripción del proyecto.</p>
-          <a href="#" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition">Ver proyecto</a>
-        </div>
-        <div class="bg-white dark:bg-gray-600 rounded-xl shadow-md p-6 hover:shadow-2xl hover:scale-105 transition">
-          <h4 class="font-bold text-xl mb-2 text-gray-700 dark:text-gray-200">App / Script</h4>
-          <p class="text-sm text-gray-500 dark:text-gray-300 mb-4">Breve descripción del proyecto.</p>
-          <a href="#" target="_blank" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition">Ver proyecto</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="p-6 bg-gray-800 text-center text-gray-400 rounded-b-3xl">
-      <p class="mb-2">© 2025 Luciano Budman</p>
-      <div class="flex justify-center space-x-4 text-xl">
-        <a href="https://github.com/tuusuario" class="hover:text-white"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/tuusuario" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </footer>
-
-  </div>
-
-  <!-- Script AOS -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      AOS.init();
-    });
-  </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init();
+        });
+    </script>
 
 </body>
 </html>
-
-
-
