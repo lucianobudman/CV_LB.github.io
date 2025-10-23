@@ -22,7 +22,7 @@ El objetivo fue construir un CV moderno y responsivo, que a la vez sirviera como
 
 Puedes ver el resultado final, que está desplegado en GitHub Pages, aquí:
 
-[**Ver el CV en Vivo** (Insertar URL de GitHub Pages)]
+[**Ver el CV en Vivo**  https://lucianobudman.github.io/CV_LB.github.io/]
 
 ## 🙋‍♂️ Sobre Mí
 
