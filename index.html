@@ -56,6 +56,34 @@
 
     }
 
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease both;
+    }
+
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
   </style>
 
 </head>
@@ -72,17 +100,23 @@
 
     <!-- Header -->
 
-    <header class="relative bg-gradient-to-r from-teal-500 via-sky-500 to-indigo-500 animate-gradient-x text-white p-10 text-center rounded-t-3xl">
+    <header class="relative bg-gradient-to-r from-teal-500 via-sky-500 to-indigo-500 animate-gradient-x text-white p-10 text-center rounded-t-3xl fade-in-up">
 
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-2">Luciano Budman</h1>
 
-      <h2 class="text-lg sm:text-xl lg:text-2xl font-light text-gray-100">Profesional en Tecnología y Desarrollo</h2>
+      <h2 class="text-lg sm:text-xl lg:text-2xl font-light text-gray-100">Desarrollador en formación · Tecnología · Soluciones creativas</h2>
 
-      <a href="cv.pdf" download class="inline-block bg-white text-indigo-600 px-6 py-2 rounded-full mt-6 hover:bg-gray-100 transition">
+      <div class="flex flex-wrap justify-center gap-3 mt-6">
 
-        Descargar CV PDF
+        <a href="mailto:lucianobudman2005@gmail.com?subject=Consulta%20sobre%20CV" class="inline-block bg-white text-indigo-600 px-6 py-2 rounded-full hover:bg-gray-100 transition font-semibold">
+          Contactar
+        </a>
 
-      </a>
+        <a href="https://github.com/lucianobudman" target="_blank" class="inline-block border border-white/80 text-white px-6 py-2 rounded-full hover:bg-white/10 transition font-semibold">
+          Ver GitHub
+        </a>
+
+      </div>
 
     </header>
 
@@ -90,7 +124,7 @@
 
     <!-- Perfil -->
 
-    <section class="p-6 md:p-8 lg:p-10 flex flex-col md:flex-row items-center md:items-start gap-8" data-aos="fade-up">
+    <section class="p-6 md:p-8 lg:p-10 flex flex-col md:flex-row items-center md:items-start gap-8 fade-in-up delay-1" data-aos="fade-up">
 
       <!-- Foto -->
 
@@ -110,9 +144,19 @@
 
         <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
 
-          Estudiante técnico proactivo y orientado a la resolución de problemas, con una sólida base en computación. Apasionado por la tecnología y el aprendizaje continuo, con habilidades en programación y gestión de proyectos. Adaptable y con gran iniciativa para enfrentar desafíos y contribuir en equipos de trabajo.
+          Soy un estudiante técnico con interés en el desarrollo de software, la automatización y la creación de soluciones digitales útiles. Me destaco por mi capacidad de aprender rápido, resolver problemas con lógica y trabajar con iniciativa en proyectos que combinan tecnología, creatividad y utilidad práctica.
 
         </p>
+
+        <div class="flex flex-wrap justify-center md:justify-start gap-2 mt-4">
+
+          <span class="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm font-medium">Aprendizaje rápido</span>
+
+          <span class="px-3 py-1 bg-sky-100 text-sky-700 rounded-full text-sm font-medium">Trabajo en equipo</span>
+
+          <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">Proyectos prácticos</span>
+
+        </div>
 
         <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 text-gray-500 dark:text-gray-400 mt-4">
 
@@ -178,6 +222,24 @@
 
         </div>
 
+        <div class="mt-6 border-t border-gray-200 dark:border-gray-700 pt-4">
+
+          <h4 class="font-bold text-gray-700 dark:text-gray-200">Tecnicatura en Desarrollo de Software</h4>
+
+          <p class="text-sm text-gray-500 dark:text-gray-300">En curso</p>
+
+          <p class="text-xs text-gray-400 mt-1">Inicio en 2025</p>
+
+          <ul class="list-disc list-inside mt-2 text-sm text-gray-600 dark:text-gray-300">
+
+            <li>Profundización en desarrollo de software y soluciones digitales.</li>
+
+            <li>Enfoque en prácticas más avanzadas de programación y arquitectura.</li>
+
+          </ul>
+
+        </div>
+
       </div>
 
 
@@ -192,15 +254,17 @@
 
           <div>
 
-            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Software y Herramientas</h4>
+            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Front-End</h4>
 
             <ul class="list-disc list-inside ml-2">
 
-              <li>Microsoft Office</li>
+              <li>React</li>
 
-              <li>Google Sheets</li>
+              <li>JavaScript <span class="text-xs">(ES6+)</span></li>
 
-              <li>Visual Studio</li>
+              <li>HTML5</li>
+
+              <li>CSS3 <span class="text-xs">(en proceso de mejora)</span></li>
 
             </ul>
 
@@ -208,13 +272,49 @@
 
           <div>
 
-            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Habilidades Técnicas</h4>
+            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Back-End</h4>
 
             <ul class="list-disc list-inside ml-2">
 
-              <li>Java, Python, C++</li>
+              <li>Node.js <span class="text-xs">(en proceso de mejora)</span></li>
 
-              <li>HTML, JavaScript</li>
+              <li>SQL <span class="text-xs">(en proceso de mejora)</span></li>
+
+              <li>APIs REST <span class="text-xs">(en proceso de mejora)</span></li>
+
+            </ul>
+
+          </div>
+
+          <div>
+
+            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Herramientas</h4>
+
+            <ul class="list-disc list-inside ml-2">
+
+              <li>Git <span class="text-xs">(en proceso de mejora)</span></li>
+
+              <li>GitHub <span class="text-xs">(en proceso de mejora)</span></li>
+
+              <li>Visual Studio Code <span class="text-xs">(en proceso de mejora)</span></li>
+
+            </ul>
+
+          </div>
+
+          <div>
+
+            <h4 class="font-medium text-gray-700 dark:text-gray-200 mb-1">Otros</h4>
+
+            <ul class="list-disc list-inside ml-2">
+
+              <li>Java <span class="text-xs">(en proceso de mejora)</span></li>
+
+              <li>Python <span class="text-xs">(en proceso de mejora)</span></li>
+
+              <li>C# <span class="text-xs">(en proceso de mejora)</span></li>
+
+              <li>TypeScript <span class="text-xs">(en proceso de mejora)</span></li>
 
             </ul>
 
@@ -228,9 +328,11 @@
 
               <li>Trabajo en equipo</li>
 
-              <li>Resolución de Problemas</li>
+              <li>Resolución de problemas</li>
 
-              <li>Iniciativa</li>
+              <li>Adaptabilidad</li>
+
+              <li>Proactividad</li>
 
             </ul>
 
@@ -258,7 +360,7 @@
 
       <!-- Cursos -->
 
-      <div class="col-span-1 md:col-span-2 bg-gray-50 dark:bg-gray-700 p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition-transform hover:scale-105" data-aos="fade-up">
+      <div class="col-span-1 md:col-span-2 bg-gray-50 dark:bg-gray-700 p-6 rounded-2xl shadow-md border border-gray-200 card-hover" data-aos="fade-up">
 
         <h3 class="text-2xl font-semibold mb-4 border-b-2 border-indigo-500 pb-2 text-gray-800 dark:text-gray-100">Cursos y Certificaciones</h3>
 
@@ -292,36 +394,86 @@
 
     </div>
 
+    <section class="p-6 md:p-8 lg:p-10 fade-in-up delay-2" data-aos="fade-up">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
+        <div class="bg-gradient-to-br from-teal-500 to-sky-600 text-white rounded-2xl p-6 shadow-lg">
+          <h3 class="text-xl font-semibold mb-3">Experiencia en proyectos</h3>
+          <ul class="list-disc list-inside text-sm space-y-2 text-white/90">
+            <li>Desarrollo de aplicaciones web con enfoque en usabilidad y organización.</li>
+            <li>Implementación de soluciones con frontend, lógica de negocio y bases de datos.</li>
+            <li>Exploración de tecnologías relacionadas con visión por computadora y automatización.</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 shadow-md border border-gray-200">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100">Tecnologías y herramientas</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-white dark:bg-gray-600 rounded-full text-sm text-gray-700 dark:text-gray-200">HTML</span>
+            <span class="px-3 py-1 bg-white dark:bg-gray-600 rounded-full text-sm text-gray-700 dark:text-gray-200">CSS</span>
+            <span class="px-3 py-1 bg-white dark:bg-gray-600 rounded-full text-sm text-gray-700 dark:text-gray-200">JavaScript</span>
+            <span class="px-3 py-1 bg-white dark:bg-gray-600 rounded-full text-sm text-gray-700 dark:text-gray-200">Python</span>
+            <span class="px-3 py-1 bg-white dark:bg-gray-600 rounded-full text-sm text-gray-700 dark:text-gray-200">GitHub</span>
+            <span class="px-3 py-1 bg-white dark:bg-gray-600 rounded-full text-sm text-gray-700 dark:text-gray-200">MySQL</span>
+            <span class="px-3 py-1 bg-white dark:bg-gray-600 rounded-full text-sm text-gray-700 dark:text-gray-200">OpenCV</span>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 shadow-md border border-gray-200">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100">Intereses profesionales</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Desarrollo web</span>
+            <span class="px-3 py-1 bg-sky-100 text-sky-700 rounded-full text-sm">Automatización</span>
+            <span class="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm">IA y visión por computadora</span>
+            <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Experiencia de usuario</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- Proyectos -->
 
 <section class="p-6 md:p-8 lg:p-10" data-aos="fade-up">
-    <h3 class="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">Proyectos</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <h3 class="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">Proyectos Destacados</h3>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         <div class="bg-white dark:bg-gray-600 rounded-xl shadow-md p-6 hover:shadow-2xl hover:scale-105 transition">
             <h4 class="font-bold text-xl mb-2 text-gray-700 dark:text-gray-200">Task Manager (Full-Stack)</h4>
             <p class="text-sm text-gray-500 dark:text-gray-300 mb-4">
-                Pagina para gestionar tareas y grupos. Demuestra la arquitectura de tres capas: **Frontend** (HTML/JS/CSS), **API REST** (Node.js/Express) y persistencia en **MySQL**. (La demo en vivo usa localStorage).
+                Página para gestionar tareas y grupos con una estructura organizada y escalable. Integra frontend, API REST y base de datos, mostrando una buena comprensión de la arquitectura de aplicaciones modernas.
             </p>
             <div class="flex flex-wrap gap-3">
                 <a href="https://lucianobudman.github.io/To-do-list/" target="_blank" class="inline-block bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition text-sm font-semibold">
-                    Demo en Vivo (sin base de datos)
+                    Demo en Vivo
                 </a>
                 <a href="https://github.com/lucianobudman/To-do-list" target="_blank" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition text-sm font-semibold">
-                    Ver Código (con base de datos)
+                    Ver Código
                 </a>
             </div>
         </div>
         
-<div class="bg-white dark:bg-gray-600 rounded-xl shadow-md p-6 hover:shadow-2xl hover:scale-105 transition">
-    <h4 class="font-bold text-xl mb-2 text-gray-700 dark:text-gray-200">Reproductor de Música por Gestos (Python/CV)</h4>
-    <p class="text-sm text-gray-500 dark:text-gray-300 mb-4">
-        Aplicación de escritorio que utiliza **Visión por Computadora** (MediaPipe y OpenCV) para el control musical sin contacto. Mapea la cantidad de dedos levantados (0 a 4) a comandos de **Play/Pause**, **Siguiente Canción** y **Navegación**. Demuestra lógica avanzada y arquitectura modular en Python.
-    </p>
-    <a href="https://github.com/lucianobudman/Reproductor-de-M-sica-Controlado-por-Gestos/tree/Prueba-1" target="_blank" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition">Ver Código Fuente</a>
-</div>
+        <div class="bg-white dark:bg-gray-600 rounded-xl shadow-md p-6 hover:shadow-2xl hover:scale-105 transition">
+            <h4 class="font-bold text-xl mb-2 text-gray-700 dark:text-gray-200">Reproductor de Música por Gestos (Python/CV)</h4>
+            <p class="text-sm text-gray-500 dark:text-gray-300 mb-4">
+                Aplicación de escritorio que utiliza visión por computadora y procesamiento de imágenes para controlar reproducción musical sin contacto. Combina lógica avanzada, modularidad y una interfaz funcional.
+            </p>
+            <a href="https://github.com/lucianobudman/Reproductor-de-M-sica-Controlado-por-Gestos/tree/Prueba-1" target="_blank" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition">Ver Código Fuente</a>
+        </div>
+
+        <div class="bg-white dark:bg-gray-600 rounded-xl shadow-md p-6 card-hover border border-dashed border-teal-400">
+            <div class="flex items-center gap-2 mb-3">
+                <span class="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-semibold">Proyecto actual</span>
+            </div>
+            <h4 class="font-bold text-xl mb-2 text-gray-700 dark:text-gray-200">Parksmart</h4>
+            <p class="text-sm text-gray-500 dark:text-gray-300 mb-4">
+                Aplicación enfocada en la gestión de estacionamientos, con una propuesta orientada a facilitar la organización del espacio, mejorar la experiencia del usuario y ofrecer una solución práctica para el día a día.
+            </p>
+            <p class="text-sm font-medium text-gray-600 dark:text-gray-200">Enfoque: experiencia de usuario · solución práctica · desarrollo web</p>
+            <a href="https://github.com/lucianobudman/Parksmart" target="_blank" class="inline-block mt-4 bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition text-sm font-semibold">
+                Ver repositorio
+            </a>
+        </div>
     </div>
 </section>
 
@@ -335,9 +487,9 @@
 
       <div class="flex justify-center space-x-4 text-xl">
 
-        <a href="https://github.com/tuusuario" class="hover:text-white"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/lucianobudman" target="_blank" class="hover:text-white"><i class="fab fa-github"></i></a>
 
-        <a href="https://linkedin.com/in/tuusuario" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:lucianobudman2005@gmail.com" class="hover:text-white"><i class="fas fa-envelope"></i></a>
 
       </div>
 
